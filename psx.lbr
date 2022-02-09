@@ -315,8 +315,8 @@
 <symbol name="CXD8606Q">
 <pin name="VDD@1" x="-64.77" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@2" x="-59.69" y="-82.55" length="short" direction="pwr" rot="R90"/>
-<pin name="CRYSTALN" x="59.69" y="-87.63" direction="in" function="clk" rot="R90"/>
-<pin name="CRYSTALP" x="57.15" y="-87.63" direction="in" function="clk" rot="R90"/>
+<pin name="CRYSTAL_OUT" x="59.69" y="-87.63" direction="out" function="clk" rot="R90"/>
+<pin name="CRYSTAL_IN" x="57.15" y="-87.63" direction="in" function="clk" rot="R90"/>
 <pin name="DD31" x="-85.09" y="64.77" length="middle"/>
 <pin name="DD30" x="-85.09" y="62.23" length="middle"/>
 <pin name="DD29" x="-85.09" y="59.69" length="middle"/>
@@ -381,40 +381,40 @@
 <pin name="VDD@9" x="-24.13" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="DA1" x="-85.09" y="-41.91" length="middle" direction="out"/>
 <pin name="DA0" x="-85.09" y="-44.45" length="middle" direction="out"/>
-<pin name="!RC_NET" x="-26.67" y="85.09" length="middle" function="dot" rot="R270"/>
-<pin name="!RTS1" x="-24.13" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
-<pin name="!CTS1" x="85.09" y="62.23" length="middle" direction="in" function="dot" rot="R180"/>
-<pin name="!OTA1" x="-34.29" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
-<pin name="!OSA1" x="-31.75" y="85.09" length="middle" direction="in" function="dot" rot="R270"/>
-<pin name="TXD1" x="-46.99" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="RXD1" x="-44.45" y="85.09" length="middle" direction="in" rot="R270"/>
-<pin name="!EXT_RESET" x="-29.21" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!RC_NET" x="-62.23" y="85.09" length="middle" function="dot" rot="R270"/>
+<pin name="!SIORTS" x="85.09" y="54.61" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="!SIOCTS" x="85.09" y="52.07" length="middle" direction="in" function="dot" rot="R180"/>
+<pin name="!SIODTR" x="85.09" y="57.15" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="!SIODSR" x="85.09" y="59.69" length="middle" direction="in" function="dot" rot="R180"/>
+<pin name="SIOTX" x="85.09" y="64.77" length="middle" direction="out" rot="R180"/>
+<pin name="SIORX" x="85.09" y="62.23" length="middle" direction="in" rot="R180"/>
+<pin name="!EXT_RESET" x="-64.77" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
 <pin name="!JOY1" x="85.09" y="41.91" length="middle" direction="out" function="dot" rot="R180"/>
 <pin name="VSS@7" x="-31.75" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="!JOY2" x="85.09" y="44.45" length="middle" direction="out" function="dot" rot="R180"/>
 <pin name="VDD@10" x="-19.05" y="-82.55" length="short" direction="pwr" rot="R90"/>
-<pin name="!JOYCLK" x="87.63" y="46.99" function="dotclk" rot="R180"/>
-<pin name="!DTAO" x="-49.53" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!JOYCLK" x="87.63" y="49.53" function="dotclk" rot="R180"/>
+<pin name="!JOYDSR" x="85.09" y="46.99" length="middle" direction="in" function="dot" rot="R180"/>
 <pin name="JOYTXD" x="85.09" y="39.37" length="middle" direction="out" rot="R180"/>
 <pin name="JOYRXD" x="85.09" y="36.83" length="middle" direction="in" rot="R180"/>
-<pin name="DACK5" x="-62.23" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="DREQ5" x="-64.77" y="85.09" length="middle" direction="in" rot="R270"/>
-<pin name="DACK4" x="-57.15" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="DREQ4" x="-59.69" y="85.09" length="middle" direction="in" rot="R270"/>
-<pin name="!INTIN10" x="49.53" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
-<pin name="!INTIN9" x="46.99" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
+<pin name="CDROMACK" x="-57.15" y="85.09" length="middle" direction="out" rot="R270"/>
+<pin name="CDROMREQ" x="-54.61" y="85.09" length="middle" direction="in" rot="R270"/>
+<pin name="SPUACK" x="-41.91" y="85.09" length="middle" direction="out" rot="R270"/>
+<pin name="SPUREQ" x="-39.37" y="85.09" length="middle" direction="in" rot="R270"/>
+<pin name="!INT_PIO" x="49.53" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
+<pin name="!IN_SPU" x="46.99" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
 <pin name="VSS@8" x="-26.67" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@11" x="-13.97" y="-82.55" length="short" direction="pwr" rot="R90"/>
-<pin name="!CSHTST" x="85.09" y="64.77" length="middle" function="dot" rot="R180"/>
-<pin name="!INTIN2" x="44.45" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
-<pin name="!CS5" x="85.09" y="57.15" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="!CS4" x="85.09" y="54.61" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="!CS2" x="85.09" y="52.07" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="!CS0" x="85.09" y="49.53" length="middle" direction="out" function="dot" rot="R180"/>
-<pin name="!SWR1" x="-41.91" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
-<pin name="!SWR0" x="-39.37" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
-<pin name="!SRD" x="-36.83" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
-<pin name="!INTIN1" x="41.91" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
+<pin name="DEV8CS" x="-59.69" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!INT_CDROM" x="44.45" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
+<pin name="!CDROMCS" x="-52.07" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!SPUCS" x="-34.29" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!ROMCS" x="-44.45" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!PIOCS" x="-29.21" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!PIOWR" x="-31.75" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!SPUWR" x="-36.83" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!SRD" x="-26.67" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
+<pin name="!INT_GPU" x="41.91" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
 <pin name="VSS@9" x="-21.59" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VSS@10" x="-16.51" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <wire x1="-80.01" y1="-80.01" x2="-80.01" y2="69.85" width="0.254" layer="94"/>
@@ -470,13 +470,13 @@
 <pin name="SA22" x="85.09" y="31.75" length="middle" direction="out" rot="R180"/>
 <pin name="SA23" x="85.09" y="34.29" length="middle" direction="out" rot="R180"/>
 <pin name="VA2" x="-16.51" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="SYSCLK1" x="64.77" y="-87.63" direction="out" function="clk" rot="R90"/>
+<pin name="CLK_SPU" x="64.77" y="-87.63" direction="out" function="clk" rot="R90"/>
 <pin name="VSS@14" x="3.81" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VSS@15" x="8.89" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@17" x="16.51" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@18" x="21.59" y="-82.55" length="short" direction="pwr" rot="R90"/>
-<pin name="TCLK1" x="54.61" y="-87.63" direction="in" function="clk" rot="R90"/>
-<pin name="TCLK0" x="52.07" y="-87.63" direction="in" function="clk" rot="R90"/>
+<pin name="GPU_HBCLK" x="54.61" y="-87.63" direction="in" function="clk" rot="R90"/>
+<pin name="GPU_PXCLK" x="52.07" y="-87.63" direction="in" function="clk" rot="R90"/>
 <pin name="VD0" x="64.77" y="85.09" length="middle" rot="R270"/>
 <pin name="VD1" x="62.23" y="85.09" length="middle" rot="R270"/>
 <pin name="VD2" x="59.69" y="85.09" length="middle" rot="R270"/>
@@ -515,13 +515,13 @@
 <pin name="VDD@21" x="36.83" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VD30" x="-11.43" y="85.09" length="middle" rot="R270"/>
 <pin name="VD31" x="-13.97" y="85.09" length="middle" rot="R270"/>
-<pin name="!INTIN0" x="39.37" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
-<pin name="DREQ2" x="-54.61" y="85.09" length="middle" direction="in" rot="R270"/>
-<pin name="SYSCLK0" x="62.23" y="-87.63" direction="out" function="clk" rot="R90"/>
-<pin name="DACK2" x="-52.07" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="!VSR" x="-21.59" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="!VRD" x="-19.05" y="85.09" length="middle" direction="out" rot="R270"/>
-<pin name="!CS7" x="85.09" y="59.69" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="!INT_BLK" x="39.37" y="-85.09" length="middle" direction="in" function="dot" rot="R90"/>
+<pin name="ROMREQ" x="-46.99" y="85.09" length="middle" direction="in" rot="R270"/>
+<pin name="CLK_GPU" x="62.23" y="-87.63" direction="out" function="clk" rot="R90"/>
+<pin name="ROMACK" x="-49.53" y="85.09" length="middle" direction="out" rot="R270"/>
+<pin name="!GPUWR" x="-21.59" y="85.09" length="middle" direction="out" rot="R270"/>
+<pin name="!GPURD" x="-24.13" y="85.09" length="middle" direction="out" rot="R270"/>
+<pin name="GPUCS" x="-19.05" y="85.09" length="middle" direction="out" function="dot" rot="R270"/>
 <pin name="DSYSCLK" x="-87.63" y="-64.77" direction="out" function="clk"/>
 <pin name="VSS@19" x="29.21" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VSS@20" x="34.29" y="-82.55" length="short" direction="pwr" rot="R90"/>
@@ -582,7 +582,7 @@
 <pin name="D11" x="-85.09" y="36.83" length="middle"/>
 <pin name="VDD@9" x="-24.13" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VSS@9" x="-21.59" y="-82.55" length="short" direction="pwr" rot="R90"/>
-<wire x1="-80.01" y1="-80.01" x2="-80.01" y2="71.12" width="0.254" layer="94"/>
+<wire x1="-80.01" y1="-80.01" x2="-80.01" y2="68.58" width="0.254" layer="94"/>
 <pin name="D10" x="-85.09" y="39.37" length="middle"/>
 <pin name="D9" x="-85.09" y="41.91" length="middle"/>
 <pin name="D8" x="-85.09" y="44.45" length="middle"/>
@@ -637,7 +637,7 @@
 <pin name="FD10" x="85.09" y="3.81" length="middle" rot="R180"/>
 <wire x1="-80.01" y1="-80.01" x2="80.01" y2="-80.01" width="0.254" layer="94"/>
 <wire x1="80.01" y1="-80.01" x2="80.01" y2="80.01" width="0.254" layer="94"/>
-<wire x1="80.01" y1="80.01" x2="-71.12" y2="80.01" width="0.254" layer="94"/>
+<wire x1="80.01" y1="80.01" x2="-68.58" y2="80.01" width="0.254" layer="94"/>
 <pin name="VSS@16" x="13.97" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="VDD@16" x="11.43" y="-82.55" length="short" direction="pwr" rot="R90"/>
 <pin name="FD9" x="85.09" y="1.27" length="middle" rot="R180"/>
@@ -744,7 +744,9 @@
 <pin name="VDD@35" x="82.55" y="-24.13" length="short" direction="pwr" rot="R180"/>
 <text x="0" y="-20.32" size="6.4516" layer="95" align="bottom-center">CX8561BQ</text>
 <text x="0" y="20.32" size="6.4516" layer="96" align="top-center">&gt;VALUE</text>
-<wire x1="-71.12" y1="80.01" x2="-80.01" y2="71.12" width="0.254" layer="94"/>
+<wire x1="-80.01" y1="68.58" x2="-80.01" y2="69.85" width="0.254" layer="94"/>
+<wire x1="-80.01" y1="69.85" x2="-69.85" y2="80.01" width="0.254" layer="94"/>
+<wire x1="-69.85" y1="80.01" x2="-68.58" y2="80.01" width="0.254" layer="94"/>
 </symbol>
 <symbol name="CXD2938Q">
 <pin name="P$1" x="-10.16" y="15.24" length="middle"/>
@@ -971,41 +973,43 @@
 <devices>
 <device name="Q" package="QFP50P3060X3060X410-208">
 <connects>
-<connect gate="CPU" pin="!CS0" pad="98"/>
-<connect gate="CPU" pin="!CS2" pad="97"/>
-<connect gate="CPU" pin="!CS4" pad="96"/>
-<connect gate="CPU" pin="!CS5" pad="95"/>
-<connect gate="CPU" pin="!CS7" pad="205"/>
-<connect gate="CPU" pin="!CSHTST" pad="93"/>
-<connect gate="CPU" pin="!CTS1" pad="71"/>
+<connect gate="CPU" pin="!CDROMCS" pad="95"/>
 <connect gate="CPU" pin="!DCAS0" pad="49"/>
 <connect gate="CPU" pin="!DCAS1" pad="48"/>
 <connect gate="CPU" pin="!DCAS2" pad="47"/>
 <connect gate="CPU" pin="!DCAS3" pad="46"/>
 <connect gate="CPU" pin="!DRAS0" pad="45"/>
 <connect gate="CPU" pin="!DRAS1" pad="44"/>
-<connect gate="CPU" pin="!DTAO" pad="82"/>
 <connect gate="CPU" pin="!DWE" pad="43"/>
 <connect gate="CPU" pin="!EXT_RESET" pad="76"/>
-<connect gate="CPU" pin="!INTIN0" pad="199"/>
-<connect gate="CPU" pin="!INTIN1" pad="102"/>
-<connect gate="CPU" pin="!INTIN10" pad="89"/>
-<connect gate="CPU" pin="!INTIN2" pad="94"/>
-<connect gate="CPU" pin="!INTIN9" pad="90"/>
+<connect gate="CPU" pin="!GPURD" pad="204"/>
+<connect gate="CPU" pin="!GPUWR" pad="203"/>
+<connect gate="CPU" pin="!INT_BLK" pad="199"/>
+<connect gate="CPU" pin="!INT_CDROM" pad="94"/>
+<connect gate="CPU" pin="!INT_GPU" pad="102"/>
+<connect gate="CPU" pin="!INT_PIO" pad="89"/>
+<connect gate="CPU" pin="!IN_SPU" pad="90"/>
 <connect gate="CPU" pin="!JOY1" pad="80"/>
 <connect gate="CPU" pin="!JOY2" pad="77"/>
 <connect gate="CPU" pin="!JOYCLK" pad="81"/>
-<connect gate="CPU" pin="!OSA1" pad="73"/>
-<connect gate="CPU" pin="!OTA1" pad="72"/>
+<connect gate="CPU" pin="!JOYDSR" pad="82"/>
+<connect gate="CPU" pin="!PIOCS" pad="98"/>
+<connect gate="CPU" pin="!PIOWR" pad="99"/>
 <connect gate="CPU" pin="!RC_NET" pad="69"/>
-<connect gate="CPU" pin="!RTS1" pad="70"/>
+<connect gate="CPU" pin="!ROMCS" pad="97"/>
+<connect gate="CPU" pin="!SIOCTS" pad="71"/>
+<connect gate="CPU" pin="!SIODSR" pad="73"/>
+<connect gate="CPU" pin="!SIODTR" pad="72"/>
+<connect gate="CPU" pin="!SIORTS" pad="70"/>
+<connect gate="CPU" pin="!SPUCS" pad="96"/>
+<connect gate="CPU" pin="!SPUWR" pad="100"/>
 <connect gate="CPU" pin="!SRD" pad="101"/>
-<connect gate="CPU" pin="!SWR0" pad="100"/>
-<connect gate="CPU" pin="!SWR1" pad="99"/>
-<connect gate="CPU" pin="!VRD" pad="204"/>
-<connect gate="CPU" pin="!VSR" pad="203"/>
-<connect gate="CPU" pin="CRYSTALN" pad="3"/>
-<connect gate="CPU" pin="CRYSTALP" pad="4"/>
+<connect gate="CPU" pin="CDROMACK" pad="85"/>
+<connect gate="CPU" pin="CDROMREQ" pad="86"/>
+<connect gate="CPU" pin="CLK_GPU" pad="201"/>
+<connect gate="CPU" pin="CLK_SPU" pad="154"/>
+<connect gate="CPU" pin="CRYSTAL_IN" pad="4"/>
+<connect gate="CPU" pin="CRYSTAL_OUT" pad="3"/>
 <connect gate="CPU" pin="DA0" pad="68"/>
 <connect gate="CPU" pin="DA1" pad="67"/>
 <connect gate="CPU" pin="DA10" pad="56"/>
@@ -1018,9 +1022,6 @@
 <connect gate="CPU" pin="DA7" pad="59"/>
 <connect gate="CPU" pin="DA8" pad="58"/>
 <connect gate="CPU" pin="DA9" pad="57"/>
-<connect gate="CPU" pin="DACK2" pad="202"/>
-<connect gate="CPU" pin="DACK4" pad="87"/>
-<connect gate="CPU" pin="DACK5" pad="85"/>
 <connect gate="CPU" pin="DD0" pad="42"/>
 <connect gate="CPU" pin="DD1" pad="41"/>
 <connect gate="CPU" pin="DD10" pad="30"/>
@@ -1053,13 +1054,15 @@
 <connect gate="CPU" pin="DD7" pad="33"/>
 <connect gate="CPU" pin="DD8" pad="32"/>
 <connect gate="CPU" pin="DD9" pad="31"/>
-<connect gate="CPU" pin="DREQ2" pad="200"/>
-<connect gate="CPU" pin="DREQ4" pad="88"/>
-<connect gate="CPU" pin="DREQ5" pad="86"/>
+<connect gate="CPU" pin="DEV8CS" pad="93"/>
 <connect gate="CPU" pin="DSYSCLK" pad="206"/>
+<connect gate="CPU" pin="GPUCS" pad="205"/>
+<connect gate="CPU" pin="GPU_HBCLK" pad="159"/>
+<connect gate="CPU" pin="GPU_PXCLK" pad="160"/>
 <connect gate="CPU" pin="JOYRXD" pad="84"/>
 <connect gate="CPU" pin="JOYTXD" pad="83"/>
-<connect gate="CPU" pin="RXD1" pad="75"/>
+<connect gate="CPU" pin="ROMACK" pad="202"/>
+<connect gate="CPU" pin="ROMREQ" pad="200"/>
 <connect gate="CPU" pin="SA0" pad="125"/>
 <connect gate="CPU" pin="SA1" pad="126"/>
 <connect gate="CPU" pin="SA10" pad="137"/>
@@ -1100,11 +1103,10 @@
 <connect gate="CPU" pin="SD7" pad="114"/>
 <connect gate="CPU" pin="SD8" pad="115"/>
 <connect gate="CPU" pin="SD9" pad="116"/>
-<connect gate="CPU" pin="SYSCLK0" pad="201"/>
-<connect gate="CPU" pin="SYSCLK1" pad="154"/>
-<connect gate="CPU" pin="TCLK0" pad="160"/>
-<connect gate="CPU" pin="TCLK1" pad="159"/>
-<connect gate="CPU" pin="TXD1" pad="74"/>
+<connect gate="CPU" pin="SIORX" pad="75"/>
+<connect gate="CPU" pin="SIOTX" pad="74"/>
+<connect gate="CPU" pin="SPUACK" pad="87"/>
+<connect gate="CPU" pin="SPUREQ" pad="88"/>
 <connect gate="CPU" pin="VA2" pad="153"/>
 <connect gate="CPU" pin="VD0" pad="161"/>
 <connect gate="CPU" pin="VD1" pad="162"/>
